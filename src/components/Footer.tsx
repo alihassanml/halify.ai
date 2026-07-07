@@ -68,7 +68,7 @@ function Footer() {
           <h5 className="font-display font-semibold text-ink mb-5 text-sm">Stay Updated</h5>
           <p className="text-ink-soft text-sm mb-4">Get the latest insights on AI and software development.</p>
           {subscribed ? (
-            <p className="text-sm font-semibold text-success">You're subscribed — thank you!</p>
+            <p className="text-sm font-semibold text-success">You're subscribed  thank you!</p>
           ) : (
             <form onSubmit={handleSubscribe} className="relative">
               <input

@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 
+const CALENDLY_URL = 'https://calendly.com/alihassanbscs99/30min';
+
 const NAV_LINKS = [
   { label: 'Services', href: '#services' },
   { label: 'Process', href: '#process' },
   { label: 'Work', href: '#work' },
-  { label: 'Pricing', href: '#pricing' },
   { label: 'About', href: '#about' },
+  { label: 'Team', href: '#team' },
 ];
 
 function Navbar() {
@@ -37,8 +39,7 @@ function Navbar() {
       >
         <nav className="max-w-container mx-auto px-6 h-20 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2.5 shrink-0">
-            <img alt="Halify Logo" className="w-9 h-9 rounded-lg object-contain" src="/logo.png" />
-            <span className="font-display font-bold text-lg tracking-tight text-ink">Halify</span>
+            <img alt="Halify Logo" className="w-13 h-12 rounded-lg object-contain" src="/logo.png" />
           </a>
 
           <div className="hidden md:flex items-center gap-9">
@@ -55,7 +56,9 @@ function Navbar() {
 
           <div className="flex items-center gap-3">
             <a
-              href="#contact"
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 bg-ink text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-primary transition-colors"
             >
               Book a Call
@@ -106,7 +109,9 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handleLinkClick}
             className="mt-6 inline-flex items-center justify-center bg-ink text-white px-6 py-4 rounded-full font-semibold text-base"
           >

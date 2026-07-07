@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react';
 import Reveal from './Reveal';
+import { IconCheck } from './icons';
 
 function FinalCTA() {
   const [submitted, setSubmitted] = useState(false);
@@ -34,8 +35,10 @@ function FinalCTA() {
             <div className="bg-paper rounded-2xl p-6 sm:p-8">
               {submitted ? (
                 <div className="py-10 text-center">
-                  <div className="text-3xl mb-3">✓</div>
-                  <h3 className="font-display font-semibold text-lg text-ink mb-2">Thanks — got it!</h3>
+                  <div className="w-12 h-12 rounded-full bg-primary-soft text-primary flex items-center justify-center mx-auto mb-4">
+                    <IconCheck className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-display font-semibold text-lg text-ink mb-2">Thanks  got it!</h3>
                   <p className="text-ink-soft text-sm">
                     We'll reply within one business day to schedule your call.
                   </p>

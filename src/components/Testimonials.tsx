@@ -1,4 +1,5 @@
 import Reveal from './Reveal';
+import { IconStar } from './icons';
 
 const TESTIMONIALS = [
   {
@@ -14,7 +15,7 @@ const TESTIMONIALS = [
     initials: 'MR',
   },
   {
-    quote: 'Our automation platform reduced manual work by over sixty percent within the first month. Halify became more than a development partner — they became part of our growth journey.',
+    quote: 'Our automation platform reduced manual work by over sixty percent within the first month. Halify became more than a development partner  they became part of our growth journey.',
     name: 'David Lee',
     role: 'Operations Director',
     initials: 'DL',
@@ -47,7 +48,7 @@ function Testimonials() {
             >
               <div className="flex gap-1 mb-5 text-amber" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, idx) => (
-                  <span key={idx}>★</span>
+                  <IconStar key={idx} className="w-4 h-4" />
                 ))}
               </div>
               <p className="text-ink-soft text-[15px] leading-relaxed mb-6">"{t.quote}"</p>
