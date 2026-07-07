@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 :root {
-  color: rgba(0, 0, 0, 0.87);
+  color-scheme: light;
 }
 
 * {
@@ -12,19 +10,14 @@
 
 html, body, #root {
   width: 100%;
-  height: 100%;
 }
 
 body {
-  margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #faf8ff;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 a {
@@ -32,6 +25,27 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+}
+
 input:focus {
   outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F7FB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C7CCDC;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A6ADC4;
 }
